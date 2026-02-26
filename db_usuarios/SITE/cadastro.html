@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>Cadastro de Usuário</h2>
+
+        <form id="formCadastro">
+            <label>Nome</label>
+            <input type="text" id="nome" required>
+
+            <label>Email</label>
+            <input type="email" id="email" required>
+
+            <label>Senha</label>
+            <input type="password" id="senha" required>
+
+            <label>Perfil</label>
+            <select id="perfil">
+                <option value="USER">USER</option>
+                <option value="ADMIN">ADMIN</option>
+            </select>
+
+            <label>Endereço</label>
+            <input type="text" id="endereco">
+
+            <label>Bairro</label>
+            <input type="text" id="bairro">
+
+            <label>Complemento</label>
+            <input type="text" id="complemento">
+
+            <label>CEP</label>
+            <input type="text" id="cep">
+
+            <label>Cidade</label>
+            <input type="text" id="cidade">
+
+            <label>Estado</label>
+            <input type="text" id="estado">
+
+            <button type="submit">Salvar Usuário</button>
+        </form>
+
+        <br>
+        <button onclick="voltar()">Voltar</button>
+    </div>
+</div>
+
+<script src="src/js/cadastro.js"></script>
+</body>
+</html>
